@@ -1,37 +1,38 @@
 
 let selectedColor = 'blue'
 const painting = document.querySelector('.painting')
+const palette = document.querySelector('.palette')
 let redButton = document.querySelector('#red')
 let yellowButton = document.querySelector('#yellow')
 let greenButton = document.querySelector('#green')
 let blueButton = document.querySelector('#blue')
 let purpleButton = document.querySelector('#purple')
-let clearButton = document.querySelector('#clear')
+
 
 painting.addEventListener('click', function(e){
     e.target.style.backgroundColor = selectedColor
 })
 
-redButton.addEventListener('click', function(){
-    selectedColor = "red"
+palette.addEventListener('click', function(e){
+    selectedColor = e.target.id
 })
 
-yellowButton.addEventListener('click', function(){
-    selectedColor = "yellow"
-})
+// redButton.addEventListener('click', function(){
+//     selectedColor = "red"
+// })
 
-greenButton.addEventListener('click', function(){
-    selectedColor = "green"
-})
+// yellowButton.addEventListener('click', function(){
+//     selectedColor = "yellow"
+// })
 
-blueButton.addEventListener('click', function(){
-    selectedColor = "blue"
-})
+// greenButton.addEventListener('click', function(){
+//     selectedColor = "green"
+// })
 
-purpleButton.addEventListener('click', function(){
-    selectedColor = "purple"
-})
+// blueButton.addEventListener('click', function(){
+//     selectedColor = "blue"
+// })
 
-clearButton.addEventListener('click', function(){
-    painting.style.backgroundColor = 'white'
-})
+// purpleButton.addEventListener('click', function(){
+//     selectedColor = "purple"
+// })
